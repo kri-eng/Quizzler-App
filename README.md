@@ -1,63 +1,38 @@
+# Quizzler
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+## Introduction
 
-#  Quizzler
+Quizzler is an interactive iOS quiz application designed to engage users with thought-provoking questions while providing immediate feedback on their answers. With its intuitive interface and dynamic features, Quizzler offers an enjoyable quiz experience for users of all levels.
 
-## Our Goal
+## Screenshots
 
-The goal of this tutorial is to take you one step further in your journey of becoming an app developer. We are going to introduce you to the holy grail of mobile design patterns: the Model View Controller (MVC) pattern. A design pattern is simply a repeatable and optimised solution to a common software problem and you’ll learn more about this when use in the tutorial.
+<img src="https://github.com/kri-eng/Quizzler-App/assets/124129235/4e08d839-97c7-4981-bf87-9e06ead7c6c9" alt="Xylophone-Screenshot" width=300>
 
-## What you will create
+<img src="https://github.com/kri-eng/Quizzler-App/assets/124129235/1ed4471a-a163-425a-9d96-a0aa47fb4fc4" alt="Xylophone-Screenshot" width=300>
 
-You will program a trivia quiz app. If you have another field of expertise such as law or medicine, you’ll be glad to know that multiple choice question apps are one of the most popular types of educational apps on the App Store! 
+## User Interface
 
-## What you will learn
+The user interface of Quizzler consists of the following components:
 
-* How to programmatically change UI elements such as Labels and Buttons.
-* What is a design pattern and how is it used in programming.
-* How to use the Model-View-Controller or MVC pattern for app development.
-* Learn about Swift Structures how to instantiate a struct instance.
-* Understand the difference between value types and reference types. 
-* Learn about Swift Classes and creating Objects.
-* Compare Swift Classes with Swift Structs and know when to use which.
-* Learn about Object Oriented Programming.
-* How to refactor code and stay organised.
+- **Score Label:** Displays the user's current score in real-time.
+- **Question Label:** Presents the question to the user.
+- **Choice Buttons:** Three buttons, each representing a possible answer to the question.
+- **Progress Bar:** Indicates the number of questions remaining in the quiz.
 
+## Functionality
 
+Quizzler's core functionality revolves around presenting questions to the user and providing immediate feedback on their answers. Key features include:
 
-## Default Quiz
+- **Answer Selection:** Users tap on the choice they believe is correct among the options provided.
+- **Feedback:** Buttons change color to indicate correctness (green for correct, red for incorrect).
+- **Score Update:** The score label is updated when the user selects the correct answer.
+- **Progress Tracking:** The progress bar updates with each subsequent question, indicating quiz completion.
 
-```
-  Question(q: "A slug's blood is green.", a: "True"),
-        Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
-        Question(q: "The total surface area of two human lungs is approximately 70 square metres.", a: "True"),
-        Question(q: "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", a: "True"),
-        Question(q: "In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.", a: "False"),
-        Question(q: "It is illegal to pee in the Ocean in Portugal.", a: "True"),
-        Question(q: "You can lead a cow down stairs but not up stairs.", a: "False"),
-        Question(q: "Google was originally called 'Backrub'.", a: "True"),
-        Question(q: "Buzz Aldrin's mother's maiden name was 'Moon'.", a: "True"),
-        Question(q: "The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.", a: "False"),
-        Question(q: "No piece of square dry paper can be folded in half more than 7 times.", a: "False"),
-        Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
-```
+## Key Learnings
 
-## Multiple Choice Quiz
-
-```
- Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], correctAnswer: "Skin"),
-        Question(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], correctAnswer: "100"),
-        Question(q: "What do the letters in the GMT time zone stand for?", a: ["Global Meridian Time", "Greenwich Mean Time", "General Median Time"], correctAnswer: "Greenwich Mean Time"),
-        Question(q: "What is the French word for 'hat'?", a: ["Chapeau", "Écharpe", "Bonnet"], correctAnswer: "Chapeau"),
-        Question(q: "In past times, what would a gentleman keep in his fob pocket?", a: ["Notebook", "Handkerchief", "Watch"], correctAnswer: "Watch"),
-        Question(q: "How would one say goodbye in Spanish?", a: ["Au Revoir", "Adiós", "Salir"], correctAnswer: "Adiós"),
-        Question(q: "Which of these colours is NOT featured in the logo for Google?", a: ["Green", "Orange", "Blue"], correctAnswer: "Orange"),
-        Question(q: "What alcoholic drink is made from molasses?", a: ["Rum", "Whisky", "Gin"], correctAnswer: "Rum"),
-        Question(q: "What type of animal was Harambe?", a: ["Panda", "Gorilla", "Crocodile"], correctAnswer: "Gorilla"),
-        Question(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], correctAnswer: "Australia")
-```        
-
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
+- Programmatically changing UI elements.
+- Implementation of the Model-View-Controller (MVC) design pattern.
+- Utilization of Swift Structures and Classes.
+- Understanding value types versus reference types.
+- Object-Oriented Programming (OOP) principles.
+- Code refactoring techniques for improved organization.
